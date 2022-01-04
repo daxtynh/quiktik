@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+  <body style="min-width: 500px;">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="popup_f.js"></script>
+    <div class="container bg-dark">
+        <marquee>
+            <div class="row justify-content-center">
+                <div class="col col-auto">
+                    <p id="spy"></p>
+                </div>
+                <div class="col col-auto">
+                    <p id="dow"></p>
+                </div>
+                <div class="col col-auto">
+                    <p id="nsdq"></p>
+                </div>
+            </div>
+        </marquee>
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="text-white">Quik Tik</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <input style="margin-bottom: 1em" type="text" id="box" placeholder="Enter Stock Ticker Here"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" id="searchButton">Search</button>
+            </div>
+        </div> 
+        <div class="row justify-content-center">
+            <!--<div id="stockInfo" class="col text-center">
+                <h5 class="text-white" id="price"></h5>
+            </div> -->
+            <div class="col col-auto text-white">
+                <table id="price">
+                   
+                </table>
+            </div>
+            <div class="col col-auto text-white">
+                <table id="volume">
+                    
+                </table>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <p class="text-white">Past Searches</p>
+            </div>
+            
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <table id='pastSearchesTable' class="text-white">
+
+                </table>
+            </div>
+        </div> 
+    </div>
+  </body>
+</html>
